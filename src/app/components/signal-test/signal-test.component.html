@@ -1,0 +1,18 @@
+<fieldset style="border-block-color: red; border-width: 2px;">
+    <legend>
+        Seleccionar Usuario
+    </legend>
+    <input type="text" name="User" id="User" [(ngModel)]="User">
+</fieldset>
+
+<fieldset style="border-block-color: red; border-width: 2px;">
+    <legend>
+        Enviar mensaje
+    </legend>
+    <input type="text" name="User" id="User" [(ngModel)]="Mensaje">
+    <button (click)="SendMensaje()">Enviar</button>
+</fieldset>
+
+<ul>
+    <li *ngFor="let item of messages; let i = index"> <strong>{{ item.User }}</strong> &nbsp; {{item.Menssage}} </li>
+</ul>
